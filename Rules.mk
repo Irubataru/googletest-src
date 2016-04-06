@@ -1,1 +1,1 @@
-SUBDIRS := googletest
+SUBDIRS := googletest googlemock

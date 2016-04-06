@@ -6,10 +6,10 @@ endif
 
 SRCS_VPATH := src
 
-TARGETS := libgtest.a gtest_main.o
-SRCS := gtest-all.cc
+TARGETS := libgmock.a
+SRCS := gmock-all.cc
 
 CXXFLAGS := -g -pthread $(CXX11FLAG) -I$(d)
-INCLUDES_$(d) := $(d) $(d)/include
+INCLUDES_$(d) := $(d) $(d)/include $(d)/../googletest/include
 
-libgtest.a_DEPS = gtest-all.o
+libgmock.a_DEPS = gmock-all.o
