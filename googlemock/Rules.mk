@@ -9,7 +9,7 @@ SRCS_VPATH := src
 TARGETS := libgmock.a
 SRCS := gmock-all.cc
 
-CXXFLAGS := -g -pthread $(CXX11FLAG) -I$(d)
+CXXFLAGS_$(d) := -g -pthread $(CXX11FLAG) -I$(d)
 INCLUDES_$(d) := $(d) $(d)/include $(d)/../googletest/include
 
 libgmock.a_DEPS = gmock-all.o
